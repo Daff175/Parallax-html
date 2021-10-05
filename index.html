@@ -1,18 +1,35 @@
 <!DOCTYPE html>
 <html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+.parallax {
+  /* The image used */
+  background-image: url("img_parallax.jpg");
+
+  /* Set a specific height */
+  min-height: 500px; 
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+</style>
+</head>
 <body>
 
-<h2>HTML Forms</h2>
+<p>Scroll Up and Down this page to see the parallax scrolling effect.</p>
 
-<form action="/action_page.php">
-  <label for="fname">First name:</label><br>
-  <input type="text" id="fname" name="fname" value="John"><br>
-  <label for="lname">Last name:</label><br>
-  <input type="text" id="lname" name="lname" value="Doe"><br><br>
-  <input type="submit" value="Submit">
-</form> 
+<div class="parallax"></div>
 
-<p>If you click the "Submit" button, the form-data will be sent to a page called "/action_page.php".</p>
+<div style="height:1000px;background-color:red;font-size:36px">
+Scroll Up and Down this page to see the parallax scrolling effect.
+This div is just here to enable scrolling.
+Tip: Try to remove the background-attachment property to remove the scrolling effect.
+</div>
 
 </body>
 </html>
+
